@@ -1,0 +1,19 @@
+name: Deploy to production
+
+on:
+  push:
+    branches:
+      - main  # Change this to the branch you want to trigger the workflow on
+
+jobs:
+  run_script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run my script
+        run: |
+          chmod +x scripts/lin.sh
+          scripts/lin.sh
