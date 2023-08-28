@@ -40,7 +40,7 @@ Parameters:
 
   GitHubUser:
     Type: String
-    Default: SudKul
+    Default: jimlex1234
     Description: GitHub username or organization
     MinLength: 3
     MaxLength: 100
@@ -369,3 +369,4 @@ Resources:
                 - Name: BuildOutput
               RunOrder: 1
     DependsOn: CodeBuildProject
+
